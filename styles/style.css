@@ -1,1 +1,81 @@
-/* место для вашего кода */
+
+
+
+.headerbox {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items:center;
+    margin:0;
+    height: 293px;
+    max-width: 1100px;
+}
+
+.cover { 
+margin-bottom: 180px;
+width: 1100px;
+background-image: url("/images/cover.jpg");
+position: relative;
+height: 757px;
+z-index:-3;
+}
+
+.covertitle {
+    position: relative;
+    z-index: 5;
+    
+}
+
+.overlay {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.lots {
+    width: 1052px;
+    height: 723px;
+    margin: 0  24px 120px;
+}
+
+.about {
+margin: 0 24px 180px;
+width: 1052px;
+height: 595px;
+}
+
+.footer {
+
+}
+
+.logo {
+    width: 148px;
+    height: 105px;
+    padding-bottom: 96px;
+    
+}
+
+.addressheader {
+  display: grid;
+  align-self: center;
+  max-width: 240px;
+  max-height: 98px;
+  justify-self: end;
+  font-size: 18px;
+  font-style: normal;
+  text-underline-position: under;
+  line-height: 24px;
+  font-family: 'Raleway';
+  font-weight: 400px;
+}
+
+.menu {
+    display: grid;
+    justify-self: start;
+    list-style:circle;
+    max-width: 392px;
+}
+
+
+
