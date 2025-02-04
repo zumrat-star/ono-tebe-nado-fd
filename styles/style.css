@@ -1,12 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
-  max-width: 1100px;
 }
 
 .sections {
   width: 100%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .header {
