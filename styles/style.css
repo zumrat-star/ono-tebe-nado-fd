@@ -45,9 +45,13 @@
   text-underline-offset: 4px;
 }
 
-.header__link_active {
+.address__text {
   text-decoration: none;
 }
+
+.link_active {
+  text-decoration: none; /*объединила в футере и в шапке все слова, которые идут без нижнего подчеркивания*/
+  }
 
 .header__logo {
   display: block;
@@ -65,7 +69,7 @@
   background-position: center;
   background-color: blue;
   max-width: 1100px;
-  max-height: 757px;
+  min-height: 757px;
 }
 
 .cover_title {
@@ -86,10 +90,6 @@
   height: 100%;
   left: 0;
   top: 0;
-}
-
-.address_header {
-  justify-self: end;
 }
 
 .description {
@@ -152,11 +152,15 @@
 }
 
 .lots__card-list {
-  display: flex;
+  display: grid;
   list-style-type: style none;
-  display: flex;
   gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
+}
+
+.lots__card-list-item {
+  height: 100%;
 }
 
 .card {
@@ -164,8 +168,9 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  height: 596px;
-  width: 334px;
+  width: auto;
+  height: 100%;
+  gap: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -280,10 +285,6 @@
 
 .footer__menu {
   text-align: center;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
 }
 
 .footer__social-list {
